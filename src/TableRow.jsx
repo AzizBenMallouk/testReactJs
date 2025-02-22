@@ -1,9 +1,14 @@
-function TableRow({data})
+function TableRow({data, action})
 {
+    // console.log(data);
     return (
         <tr>
             <td>{data}</td>
-            <td>Action</td>
+            <td>
+                <button onClick={()=>action(data)}>
+                    Delete
+                </button>
+            </td>
         </tr>
     );
 }

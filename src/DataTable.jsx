@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TableRow from './TableRow';
 
 function DataTable(){
     const [tasks, setTasks] = useState(["Task 1", "Task 2", "Task 3", "Task 4"]);
+    const [a, setA] = useState();
     // let tasks = ["Task 1", "Task 2", "Task 3", "Task 4"];
     // const nbr = [1,2,3]; [2,4,6]
     // nbr.map((i)=> i*2 )
 
+    
+   
+
     function deleteTask(task)
     {
         setTasks(tasks.filter((t)=> t!=task));
-        console.log("test", tasks);
+        // console.log("test", tasks);
     }
 
     return (

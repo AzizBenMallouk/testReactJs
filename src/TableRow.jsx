@@ -3,10 +3,21 @@ import { useEffect } from "react";
 function TableRow({data, action})
 {
     useEffect(()=>{
+        console.log("update");
+    });
+    useEffect(()=>{
+        console.log("rendre")
+    },[]);
+    useEffect(()=>{
         return ()=>{
             console.log("data");
         }
-    },[data]);
+    },[a, tasks]);
+    useEffect(()=>{
+        return ()=>{
+            console.log("remove");
+        }
+    });
     // console.log(data);
     return (
         <tr>

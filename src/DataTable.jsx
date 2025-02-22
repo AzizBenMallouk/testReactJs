@@ -1,3 +1,5 @@
+import TableRow from './TableRow';
+
 function DataTable(){
     return (
         <table>
@@ -5,10 +7,10 @@ function DataTable(){
                 <th>Title</th>
                 <th>Action</th>
             </tr>
-            <tr>
-                <td>Title</td>
-                <td>Action</td>
-            </tr>
+            <TableRow data="test"/>
+            <TableRow data="test"/>
+            <TableRow data="test"/>
+            <TableRow data="test"/>
         </table>
     );
 }
